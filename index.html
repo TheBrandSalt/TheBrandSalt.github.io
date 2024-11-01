@@ -3,16 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Brand Salt - Authentic Branding Agency">
     <title>The Brand Salt</title>
     <link rel="stylesheet" href="css/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Smooth scrolling effect */
-        html {
-            scroll-behavior: smooth;
+        /* Basic Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Navigation Styles */
+        header {
+            background-color: #333;
+            padding: 10px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
 
+        nav ul li {
+            display: inline-block;
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        
+        /* Dropdown Styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Multi-Level Dropdown Styling */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-content {
+            top: 0;
+            left: 100%;
+            margin-top: -12px;
+        }
+
+        .dropdown-submenu:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="container">
+        <h1 class="logo">The Brand Salt</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+
+                <!-- Main Dropdown: Meet the Chefs -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Meet the Chefs</a>
+                    <div class="dropdown-content">
+                        
+                        <!-- First Sub-Menu: About Us -->
+                        <div class="dropdown-submenu">
+                            <a href="#about-us">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="#about-details">Our Story</a>
+                                <a href="#about-values">Our Values</a>
+                            </div>
+                        </div>
+
+                        <!-- Second Sub-Menu: The Genius Mind -->
+                        <div class="dropdown-submenu">
+                            <a href="#the-genius">The Genius Mind</a>
+                            <div class="dropdown-content">
+                                <a href="#genius-approach">Our Approach</a>
+                                <a href="#genius-team">Meet the Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
         /* Hero Section */
         .hero-section {
             background-image: url('css/images/bg.jpg'); 
