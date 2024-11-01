@@ -200,15 +200,17 @@
     </div>
 </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section">
-    <div class="container">
-        <h2>A tbs. for all Branding Solutions</h2>
-        <p>A one-stop shop for all branding ingredients.</p>
+ <!-- Hero Section -->
+   <section id="home" class="hero-section">
+    <div class="hero-content" style="background-image: url('img/hero-background.jpg');">
+        <h2 style="color: white;">A TBS. FOR ALL BRANDING SOLUTIONS</h2>
+        <p style="color: white;">A one-stop shop for all branding ingredients.</p>
+        <a href="#services" class="btn hero-btn">Explore Our Services</a>
+        <a href="https://calendly.com/thebrandsalt/your-brand-salt" class="btn hero-btn">Schedule a Call</a>
     </div>
 </section>
 
-        /* Our Services Section */
+    <!-- Services Section -->
         #services {
             background-color: #f9f3e8;
             padding: 50px 20px;
@@ -351,6 +353,35 @@
         </div>
     </div>
 </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
+            <form action="mailto:contact@thebrandsalt.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 The Brand Salt. All rights reserved. | <a href="mailto:info@thebrandsalt.com">info@thebrandsalt.com</a></p>
+    </footer>
+
+<script>
+    // Toggle the dropdown menu
+    document.querySelector('.dropbtn').addEventListener('mouseover', function () {
+        document.querySelector('.dropdown-content').style.display = 'block';
+    });
+    document.querySelector('.dropdown').addEventListener('mouseleave', function () {
+        document.querySelector('.dropdown-content').style.display = 'none';
+    });
+</script>
 
 </body>
 </html>
