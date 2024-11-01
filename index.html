@@ -3,174 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Brand Salt - Authentic Branding Agency">
-    <title>The Brand Salt</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Branding Solutions - TBS</title>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <header>
-        <div class="container">
-            <h1 class="logo">The Brand Salt</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">Meet the Chefs</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Meet the Chefs</a>
+                <ul class="dropdown">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#genius-minds">The Genius Minds</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </li>
+        </ul>
+    </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
-            <h2>A tbs. for all Branding Solutions</h2>
+            <h2>A TBS. for all Branding Solutions.</h2>
             <p>A one-stop shop for all branding ingredients.</p>
             <a href="#services" class="btn hero-btn">Explore Our Services</a>
             <a href="https://calendly.com/thebrandsalt/your-brand-salt" class="btn hero-btn">Schedule a Call</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>Our Expertise</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <h3>LinkedIn Branding</h3>
-                    <p>We craft a LinkedIn presence that reflects your unique expertise and helps you stand out.</p>
-                    <ul>
-                        <li>Profile optimization</li>
-                        <li>Content creation and curation</li>
-                        <li>Performance analysis and strategy</li>
-                        <li>Network building and engagement</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Instagram Branding</h3>
-                    <p>We help you establish a strong brand identity on Instagram, balancing trends and authenticity.</p>
-                    <ul>
-                        <li>Content creation for various brand styles</li>
-                        <li>Direct message management</li>
-                        <li>META ads and campaign support</li>
-                        <li>Algorithm-aware strategy</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Brand Set-Up & Optimization</h3>
-                    <p>We provide comprehensive support to build and refine your brand's online presence.</p>
-                    <ul>
-                        <li>Goal-aligned profile setup</li>
-                        <li>Search Engine Optimization (SEO)</li>
-                        <li>Brand guide creation</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Network Establishment</h3>
-                    <p>We connect you with the right people, building professional networks that drive growth and opportunities.</p>
-                    <ul>
-                        <li>Community building</li>
-                        <li>Content management and engagement</li>
-                        <li>Reputation management</li>
-                        <li>Strategic platform and event positioning</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>META & Google Ads</h3>
-                    <p>We run targeted advertising campaigns to reach your ideal audience and drive conversions.</p>
-                    <ul>
-                        <li>Audience targeting on META and Google</li>
-                        <li>Performance optimization</li>
-                        <li>Lead generation and conversation boosting</li>
-                        <li>Algorithm-based ad monitoring and adjustments</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section id="services">
+        <h2>Our Expertise</h2>
+        <!-- Expertise blocks here -->
     </section>
 
-    <!-- Meet the Chefs Section (formerly About Us & Team) -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>Meet the Chefs</h2>
-            <p class="intro">Welcome to <strong>The Brand Salt</strong> - the essential ingredient for branding!</p>
-            <p class="motto">We create <strong>Authentic Branding</strong> experiences that go beyond trends and aesthetics.</p>
-            <p>At <strong>The Brand Salt</strong>, we focus on curating a brand’s true self, rather than following trends. With a creative team of brand specialists, we are focused on maximizing the brand's potential, bringing out the essence that makes it truly stand out.</p>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="img/team1.jpg" alt="Team Member 1">
-                    <h3>Brijmohan Rai</h3>
-                    <p>Operations Head</p>
-                </div>
-                <div class="team-member">
-                    <img src="img/team2.jpg" alt="Team Member 2">
-                    <h3>Nehal</h3>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="team-member">
-                    <img src="img/team3.jpg" alt="Team Member 3">
-                    <h3>Ananya K.</h3>
-                    <p>Marketing Manager</p>
-                </div>
-                <div class="team-member">
-                    <img src="img/team4.jpg" alt="Team Member 4">
-                    <h3>Priyamvada S.</h3>
-                    <p>Lead Designer</p>
-                </div>
-                <div class="team-member">
-                    <img src="img/team5.jpg" alt="Team Member 5">
-                    <h3>Shreya Londhe</h3>
-                    <p>Content Strategist</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
-            <form action="mailto:contact@thebrandsalt.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 The Brand Salt. All rights reserved. | <a href="mailto:info@thebrandsalt.com">info@thebrandsalt.com</a></p>
-    </footer>
-
-    <style>
-        /* General Styling */
-        body {
-            background-color: #ffffff; /* White background */
-            color: #3d2b1f; /* Dark brown text */
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /* Service Cards Alternate Colors */
-        .service-card {
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            color: #3d2b1f; /* Text color */
-        }
-        .service-card:nth-child(even) {
-            background-color: #f7f1e6; /* Light brown */
-        }
-        .service-card:nth-child(odd) {
-            background-color: #ffffff; /* White */
-        }
-    </style>
-
+    <script src="script.js"></script>
 </body>
 </html>
