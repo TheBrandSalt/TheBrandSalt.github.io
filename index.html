@@ -7,33 +7,15 @@
     <title>The Brand Salt</title>
     <link rel="stylesheet" href="css/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <style>
+        /* Smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <!-- Navigation -->
-  <header>
-    <div class="container">
-        <h1 class="logo">The Brand Salt</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li class="dropdown">
-                    <a href="#about" class="dropbtn">Meet the Chefs</a>
-                    <div class="dropdown-content">
-                        <a href="#about-us">About Us</a>
-                        <a href="#the-brains">The Brains Behind Us</a>
-                    </div>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-   /* Hero Section */
+        /* Hero Section */
         .hero-section {
-            background-image: url('css/images/bg.jpg');
+            background-image: url('css/images/bg.jpg'); 
             background-size: cover;
             background-position: center;
             color: white;
@@ -50,52 +32,144 @@
             font-size: 1.2em;
         }
 
-    <!-- Services Section -->
+        /* Expertise Section */
+        .services-section {
+            background-color: #fdfaf4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2em;
+            color: #5a4035;
+            margin-bottom: 40px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .expertise-card {
+            background-color: #5a4035;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: scale(1.05);
+        }
+
+        .expertise-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .expertise-card p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .expertise-card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.9em;
+        }
+
+        .expertise-card ul li {
+            padding: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">The Brand Salt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#team">Meet the Chefs</a>
+                        <div class="dropdown-content">
+                            <a href="#about">About Us</a>
+                            <a href="#genius-minds">The Genius Minds</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>A tbs. for all Branding Solutions.</h2>
+            <p>A one-stop shop for all branding ingredients.</p>
+            <a href="#services" class="btn hero-btn">Explore Our Services</a>
+            <a href="https://calendly.com/thebrandsalt/your-brand-salt" class="btn hero-btn">Schedule a Call</a>
+        </div>
+    </section>
+
+    <!-- Expertise Section with Improved Layout -->
     <section id="services" class="services-section">
         <div class="container">
             <h2>Our Expertise</h2>
-            <div class="service-cards" style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <div class="service-card" style="flex: 1; text-align: center;">
-                    <h3 style="text-transform: uppercase;">LinkedIn Branding</h3>
-                    <ul style="text-align: left;">
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>LinkedIn Branding</h3>
+                    <p>We craft a LinkedIn presence that reflects your unique expertise and helps you stand out.</p>
+                    <ul>
                         <li>Profile optimization</li>
                         <li>Content creation and curation</li>
                         <li>Performance analysis and strategy</li>
                         <li>Network building and engagement</li>
                     </ul>
                 </div>
-                <div class="service-card" style="flex: 1; text-align: center;">
-                    <h3 style="text-transform: uppercase;">Instagram Branding</h3>
-                    <ul style="text-align: left;">
+                <div class="expertise-card">
+                    <h3>Instagram Branding</h3>
+                    <p>We help you establish a strong brand identity on Instagram, balancing trends and authenticity.</p>
+                    <ul>
                         <li>Content creation for various brand styles</li>
                         <li>Direct message management</li>
                         <li>META ads and campaign support</li>
                         <li>Algorithm-aware strategy</li>
                     </ul>
                 </div>
-                <div class="service-card" style="flex: 1; text-align: center;">
-                    <h3 style="text-transform: uppercase;">Brand Set-Up & Optimization</h3>
-                    <ul style="text-align: left;">
+                <div class="expertise-card">
+                    <h3>Brand Set-Up & Optimization</h3>
+                    <p>We provide comprehensive support to build and refine your brand's online presence.</p>
+                    <ul>
                         <li>Goal-aligned profile setup</li>
                         <li>Search Engine Optimization (SEO)</li>
                         <li>Brand guide creation</li>
                     </ul>
                 </div>
-                <div class="service-card" style="flex: 1; text-align: center;">
-                    <h3 style="text-transform: uppercase;">Network Establishment</h3>
-                    <ul style="text-align: left;">
+                <div class="expertise-card">
+                    <h3>Network Establishment</h3>
+                    <p>We connect you with the right people, building professional networks that drive growth and opportunities.</p>
+                    <ul>
                         <li>Community building</li>
                         <li>Content management and engagement</li>
                         <li>Reputation management</li>
                         <li>Strategic platform and event positioning</li>
                     </ul>
                 </div>
-                <div class="service-card" style="flex: 1; text-align: center;">
-                    <h3 style="text-transform: uppercase;">META & Google Ads</h3>
-                    <ul style="text-align: left;">
+                <div class="expertise-card">
+                    <h3>META & Google Ads</h3>
+                    <p>We run targeted advertising campaigns to reach your ideal audience and drive conversions.</p>
+                    <ul>
                         <li>Audience targeting on META and Google</li>
                         <li>Performance optimization</li>
-                        <li>Lead generation and conversion boosting</li>
+                        <li>Lead generation and conversation boosting</li>
                         <li>Algorithm-based ad monitoring and adjustments</li>
                     </ul>
                 </div>
@@ -121,16 +195,13 @@
     <footer>
         <p>© 2024 The Brand Salt. All rights reserved. | <a href="mailto:info@thebrandsalt.com">info@thebrandsalt.com</a></p>
     </footer>
-
-<script>
-    // Toggle the dropdown menu
-    document.querySelector('.dropbtn').addEventListener('mouseover', function () {
-        document.querySelector('.dropdown-content').style.display = 'block';
-    });
-    document.querySelector('.dropdown').addEventListener('mouseleave', function () {
-        document.querySelector('.dropdown-content').style.display = 'none';
-    });
-</script>
+    
+    <script>
+        // Toggle the mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('header').classList.toggle('show-menu');
+        });
+    </script>
 
 </body>
 </html>
