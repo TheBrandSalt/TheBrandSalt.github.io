@@ -73,7 +73,7 @@
 
       /* Hero Section */
         .hero-section {
-            background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+            background-image: url('css/images/bg.jpg'); /* Replace with your image URL */
             background-size: cover;
             background-position: center;
             color: white;
@@ -294,6 +294,27 @@
 <footer>
     <p>&copy; 2024 The Brand Salt. All rights reserved.</p>
 </footer>
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container, nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text-line1, .hero-text-line2 {
+        font-size: 1.5em;
+    }
+}
 
 </body>
 </html>
