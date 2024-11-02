@@ -3,312 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brand Salt</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-
-        /* Basic Styling */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #fff;
-            color: #3B3B3B;
-            overflow-x: hidden;
-        }
-        
-        /* Navigation Styles */
-        header {
-            background-color: #333;
-            padding: 10px;
-        }
-        
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .logo {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline-block;
-            position: relative;
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            background-color: #555;
-        }
-
-        .dropdown-content, .dropdown-submenu .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content,
-        .dropdown-submenu:hover .dropdown-content {
-            display: block;
-        }
-
-        <!-- Hero Section -->
-<section class="hero-section">
-    <h2>
-        <span class="hero-text-line1">A tbs. for all Branding Solutions</span>
-        <span class="hero-text-line2">A one-stop shop for all branding ingredients.</span>
-    </h2>
-</section>
-
-       /* Our Services Section */
-        #services {
-            background-color: #f9f3e8;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .services-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .service-box {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            width: calc(33% - 40px);
-            padding: 20px;
-            text-align: left;
-        }
-
-        .service-box h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .service-box ul {
-            padding-left: 20px;
-            list-style-type: disc;
-        }
-
-        /* Contact Section */
-        #contact {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-
-        #contact h2 {
-            font-size: 2em;
-            margin: 0;
-        }
-
-        #contact p {
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            display: block;
-            width: 80%;
-            max-width: 500px;
-            margin: 10px auto;
-            padding: 10px;
-            font-size: 1em;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 0.9em;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Responsive Styling */
-        @media (max-width: 768px) {
-            .hero-section h2 {
-                font-size: 2em;
-            }
-            
-            .services-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-box {
-                width: 100%;
-                max-width: 500px;
-            }
-        }
-    </style>
+    <title>The Branding Studio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li>
+                <a href="#">Meet the Chefs</a>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">The Genius Minds</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Navigation -->
-<header>
-    <div class="container">
-        <h1 class="logo">The Brand Salt</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h2>
+            <span class="hero-text-line1">A tbs. for all Branding Solutions</span>
+            <span class="hero-text-line2">A one-stop shop for all branding ingredients.</span>
+        </h2>
+    </section>
 
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Meet the Chefs</a>
-                    <div class="dropdown-content">
-                        <div class="dropdown-submenu">
-                            <a href="#about-us">About Us</a>
-                        </div>
-                        <div class="dropdown-submenu">
-                            <a href="#the-genius">The Brains behind Us</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- Hero Section -->
-.hero-text-line1 {
-    display: block;
-    font-size: 2.5em; /* Adjust font size as needed */
-    font-weight: bold;
-}
-
-.hero-text-line2 {
-    display: block;
-    font-size: 1.5em; /* Adjust font size as needed */
-    margin-top: 0.3em; /* Controls spacing between lines */
-}
-
-<!-- Our Services Section -->
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-        <div class="service-box">
-            <h3>LINKEDIN BRANDING</h3>
-            <p> We craft a LinkedIn presence that reflects your unique expertise and helps you stand out. </p>
-            <ul>
-                <li>Profile Optimization</li>
-                <li>Content Creation and Curation</li>
-                <li>Performance Analysis and Strategy</li>
-                <li>Network building and engagement</li>
-            </ul>
+    <!-- Our Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>LINKEDIN BRANDING</h3>
+                <p>We craft a LinkedIn presence that reflects your unique expertise and helps you stand out.</p>
+                <ul>
+                    <li>Profile Optimization</li>
+                    <li>Content Creation and Curation</li>
+                    <li>Performance Analysis and Strategy</li>
+                    <li>Network building and engagement</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h3>INSTAGRAM BRANDING</h3>
+                <p>We help you establish a strong brand identity on Instagram, balancing trends and authenticity.</p>
+                <ul>
+                    <li>Content creation for various brand styles</li>
+                    <li>Direct Message Management</li>
+                    <li>META ads and campaign support</li>
+                    <li>Algorithm-aware strategy</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h3>BRAND SET-UP AND OPTIMIZATION</h3>
+                <p>We provide comprehensive support to build and refine your brand's online presence.</p>
+                <ul>
+                    <li>Goal-aligned Profile Setup</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Brand Guide Creation</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h3>NETWORK ESTABLISHMENT</h3>
+                <p>We connect you with the right people, building professional networks that drive growth and opportunities.</p>
+                <ul>
+                    <li>Community Building</li>
+                    <li>Content Management and Engagement</li>
+                    <li>Reputation and PR Management</li>
+                    <li>Strategic platform and event positioning</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h3>META AND GOOGLE ADS</h3>
+                <p>We run targeted advertising campaigns to reach your ideal audience and drive conversions.</p>
+                <ul>
+                    <li>Audience targeting on META and Google</li>
+                    <li>Performance Optimization</li>
+                    <li>Lead generation and conversation boosting</li>
+                    <li>Algorithm-based ad monitoring and adjustments</li>
+                </ul>
+            </div>
         </div>
-        <div class="service-box">
-            <h3>INSTAGRAM BRANDING</h3>
-            <p>We help you establish a strong brand identity on Instagram, balancing trends and authenticity.</p>
-            <ul>
-                <li>Content creation for various brand styles</li>
-                <li>Direct Message Management</li>
-                <li>META ads and campaign support</li>
-                <li>Algorithm-aware strategy</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>BRAND SET-UP AND OPTIMIZATION</h3>
-            <p>We provide comprehensive support to build and refine your brand's online presence.</p>
-            <ul>
-                <li>Goal-aligned Profile Setup</li>
-                <li>Search Engine Optimization</li>
-                <li>Brand Guide Creation</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>NETWORK ESTABLISHMENT</h3>
-            <p>We connect you with the right people, building professional networks that drive growth and opportunities.</p>
-            <ul>
-                <li>Community Building</li>
-                <li>Content Management and Engagement</li>
-                <li>Reputation and PR Management</li>
-                <li>Strategic platform and event positioning</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>META AND GOOGLE ADS</h3>
-            <p>We run targeted advertising campaigns to reach your ideal audience and drive conversions.</p>
-            <ul>
-                <li>Audience targeting on META and Google</li>
-                <li>Performance Optimization</li>
-                <li>Lead generation and conversation boosting</li>
-                <li>Algortihm-based ad monitoring and adjustments</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Us Section -->
-<section id="contact">
-    <h2>CONTACT US!</h2>
-    <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
-    <div class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </div>
-</section>
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>CONTACT US!</h2>
+        <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 The Brand Salt | All rights reserved | thebrandsalt@gmail.com </p>
-</footer>
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .hero-section h2 {
-        font-size: 1.8em;
-    }
-
-    .service-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .container, nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text-line1, .hero-text-line2 {
-        font-size: 1.5em;
-    }
-}
-
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 The Branding Studio. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
