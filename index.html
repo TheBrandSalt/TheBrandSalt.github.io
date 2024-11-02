@@ -73,7 +73,7 @@
 
         /* Hero Section */
         .hero-section {
-            background-image: url('path/to/your/image.jpg');
+            background-image: url('css/images/bg.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -86,16 +86,17 @@
             font-weight: 600;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             margin: 0;
+            line-height: 1.2;
         }
 
-        .hero-section p {
-            font-size: 1.2em;
+        .hero-section h2 span {
+            display: block;
             margin-top: 10px;
         }
 
         /* Our Services Section */
         #services {
-            background-color: #f9f3e8;
+            background-color: #fff;
             padding: 50px 20px;
             text-align: center;
         }
@@ -110,7 +111,7 @@
         }
 
         .service-box {
-            background-color: #fff;
+            background-color: #3B3B3B;
             border-radius: 8px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             width: calc(33% - 40px);
@@ -141,7 +142,7 @@
         #contact {
             padding: 50px 20px;
             text-align: center;
-            background-color: #f1f1f1;
+            background-color: #fff;
         }
 
         #contact h2 {
@@ -161,6 +162,15 @@
             margin: 10px auto;
             padding: 10px;
             font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
         }
 
         /* Smooth Scroll */
@@ -218,8 +228,8 @@
 <!-- Hero Section -->
 <section id="home" class="hero-section">
     <div class="container">
-        <h2>A tbs. for all Branding Solutions</h2>
-        <p>A one-stop shop for all branding ingredients.</p>
+        <h2>A tbs. for all Branding Solutions</h2>w
+        <h3>A one-stop shop for all branding ingredients.</h3>
     </div>
 </section>
 
@@ -237,45 +247,7 @@
                 <li>Network building and engagement</li>
             </ul>
         </div>
-        <div class="service-box">
-            <h3>INSTAGRAM BRANDING</h3>
-            <p>We help you establish a strong brand identity on Instagram, balancing trends and authenticity.</p>
-            <ul>
-                <li>Content creation for various brand styles</li>
-                <li>Direct Message Management</li>
-                <li>META ads and campaign support</li>
-                <li>Algorithm-aware strategy</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>BRAND SET-UP AND OPTIMIZATION</h3>
-            <p>We provide comprehensive support to build and refine your brand's online presence.</p>
-            <ul>
-                <li>Goal-aligned Profile Setup</li>
-                <li>Search Engine Optimization</li>
-                <li>Brand Guide Creation</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>NETWORK ESTABLISHMENT</h3>
-            <p>We connect you with the right people, building professional networks that drive growth and opportunities.</p>
-            <ul>
-                <li>Community Building</li>
-                <li>Content Management and Engagement</li>
-                <li>Reputation and PR Management</li>
-                <li>Strategic platform and event positioning</li>
-            </ul>
-        </div>
-        <div class="service-box">
-            <h3>META AND GOOGLE ADS</h3>
-            <p>We run targeted advertising campaigns to reach your ideal audience and drive conversions.</p>
-            <ul>
-                <li>Audience targeting on META and Google</li>
-                <li>Performance Optimization</li>
-                <li>Lead generation and conversion boosting</li>
-                <li>Algorithm-based ad monitoring and adjustments</li>
-            </ul>
-        </div>
+        <!-- Additional services go here... -->
     </div>
 </section>
 
@@ -290,6 +262,11 @@
         <button type="submit">Send Message</button>
     </div>
 </section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 The Brand Salt | All rights reserved | thebrandsalt@gmail.com </p>
+</footer>
 
 </body>
 </html>
