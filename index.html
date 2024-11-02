@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        
         /* Basic Styling */
         body {
             font-family: 'Poppins', sans-serif;
@@ -59,49 +58,22 @@
         nav ul li a:hover {
             background-color: #555;
         }
-        
-        /* Dropdown Styles */
-        .dropdown-content {
+
+        .dropdown-content, .dropdown-submenu .dropdown-content {
             display: none;
             position: absolute;
             background-color: #333;
-            min-width: 160px;
             z-index: 1;
         }
 
-        .dropdown-content a {
-            color: #fff;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #555;
-        }
-
-        /* Multi-Level Dropdown Styling */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-submenu {
-            position: relative;
-        }
-
-        .dropdown-submenu .dropdown-content {
-            top: 0;
-            left: 100%;
-            margin-top: -12px;
-        }
-
+        .dropdown:hover .dropdown-content,
         .dropdown-submenu:hover .dropdown-content {
             display: block;
         }
-        
-      /* Hero Section */
+
+        /* Hero Section */
         .hero-section {
-            background-image: url('css/images/bg.jpg');
+            background-image: url('path/to/your/image.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -110,10 +82,15 @@
         }
 
         .hero-section h2 {
-            font-size: 3em;
-            margin: 0;
+            font-size: 2.5em;
             font-weight: 600;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
 
         /* Our Services Section */
@@ -145,60 +122,98 @@
             font-size: 1.5em;
             margin-bottom: 10px;
             text-align: center;
+            text-transform: uppercase;
+        }
+
+        .service-box p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 1em;
         }
 
         .service-box ul {
             padding-left: 20px;
+            text-align: left;
             list-style-type: disc;
         }
 
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-
-    <!-- Services Section -->
-        #services {
-            background-color: #f9f3e8;
+        /* Contact Section */
+        #contact {
             padding: 50px 20px;
             text-align: center;
+            background-color: #f1f1f1;
         }
 
-        .services-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        #contact h2 {
+            font-size: 2em;
+            margin: 0;
         }
 
-        .service-box {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            width: calc(33% - 40px);
-            padding: 20px;
-            text-align: left;
+        #contact p {
+            font-size: 1.1em;
+            margin-top: 10px;
         }
 
-        .service-box h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .service-box ul {
-            padding-left: 20px;
-            list-style-type: disc;
+        .contact-form input, .contact-form textarea {
+            display: block;
+            width: 80%;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 1em;
         }
 
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2em;
+            }
+            
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
     </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="container">
+        <h1 class="logo">The Brand Salt</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Meet the Chefs</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#about-us">About Us</a>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#the-genius">The Brains behind Us</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <!-- Hero Section -->
 <section id="home" class="hero-section">
@@ -257,41 +272,24 @@
             <ul>
                 <li>Audience targeting on META and Google</li>
                 <li>Performance Optimization</li>
-                <li>Lead generation and conversation boosting</li>
-                <li>Algortihm-based ad monitoring and adjustments</li>
+                <li>Lead generation and conversion boosting</li>
+                <li>Algorithm-based ad monitoring and adjustments</li>
             </ul>
         </div>
     </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
-            <form action="mailto:contact@thebrandsalt.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 The Brand Salt. All rights reserved. | <a href="mailto:info@thebrandsalt.com">thebrandandsalt@gmail.com</a></p>
-    </footer>
-
-<script>
-    // Toggle the dropdown menu
-    document.querySelector('.dropbtn').addEventListener('mouseover', function () {
-        document.querySelector('.dropdown-content').style.display = 'block';
-    });
-    document.querySelector('.dropdown').addEventListener('mouseleave', function () {
-        document.querySelector('.dropdown-content').style.display = 'none';
-    });
-</script>
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>CONTACT US!</h2>
+    <p>We’d love to connect! Whether it’s a project, an inquiry, or just to say hello, reach out to us.</p>
+    <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+</section>
 
 </body>
 </html>
